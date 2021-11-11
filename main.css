@@ -1,0 +1,106 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 2.9fr 0.5fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". image ."
+    ". center ."
+    ". . ."
+    ". . ."
+    ". . .";
+}
+
+.center {
+  display: grid;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 9px;
+  font-family: 'Roboto', sans-serif;
+  grid-template-columns: 7.7fr 0.1fr 0.1fr;
+  grid-template-rows: 0.7fr 1.3fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sign_in . ."
+    "email . ."
+    "sign . .";
+  grid-area: center;
+}
+
+.sign_in { 
+  grid-area: sign_in;
+  font-size: 60px;
+  font-family: 'Roboto', sans-serif; 
+}
+
+.email {
+  display: grid;
+  border: white solid 1px;
+  grid-template-columns: 2.3fr 0.5fr 1.2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  font-size: 85%;
+  gap: 1px 1px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . ."
+    "e_border . ."
+    "password . p_link"
+    "p_border . ."
+    ". . .";
+  grid-area: email;
+}
+
+.password { 
+  grid-area: password;
+  border:white solid 10px;
+ }
+
+.e_border { 
+  grid-area: e_border;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  width: 166%;
+  }
+
+.p_border { 
+  grid-area: p_border;
+  border: 1px solid gray;
+  border-radius: 5px;
+  padding: 5px;
+  width: 166%; 
+}
+
+.p_link { 
+  grid-area: p_link;
+  border:white solid 3px;
+}
+
+.sign { grid-area: sign; }
+
+.image {
+  grid-area: image;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: orange;
+  height: 15%;
+  width: 100%;
+}
+
+a {
+  color: skyblue;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+
+}
