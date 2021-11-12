@@ -79,7 +79,9 @@
   border:white solid 3px;
 }
 
-.sign { grid-area: sign; }
+.sign { 
+  grid-area: sign; 
+}
 
 .image {
   grid-area: image;
@@ -104,3 +106,10 @@ p {
   font-family: 'Roboto', sans-serif;
 
 }
+
+.new {
+  grid-area: new;
+  text-align: center;
+  border: white solid 8px;
+}
+
