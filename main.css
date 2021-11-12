@@ -63,7 +63,7 @@
   border: 1px solid gray;
   border-radius: 5px;
   padding: 5px;
-  width: 166%;
+  width: 170%;
   }
 
 .p_border { 
@@ -71,12 +71,13 @@
   border: 1px solid gray;
   border-radius: 5px;
   padding: 5px;
-  width: 166%; 
+  width: 170%; 
 }
 
 .p_link { 
   grid-area: p_link;
   border:white solid 3px;
+  width: 100%;
 }
 
 .sign { 
@@ -90,12 +91,17 @@
   margin-right: auto;
 }
 
-button {
+.button {
   background-color: orange;
   height: 15%;
   width: 100%;
 }
 
+.button2 {
+  background-color: lightgrey;
+  height: 15%;
+  width: 100%;
+}
 a {
   color: skyblue;
   background-color: transparent;
