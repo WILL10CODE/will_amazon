@@ -76,7 +76,7 @@
 
 .p_link { 
   grid-area: p_link;
-  border:white solid 3px;
+  border:white solid 8px;
   width: 100%;
 }
 
